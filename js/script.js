@@ -18,9 +18,17 @@ const shopList = ['Uova', 'Pane', 'Latte', 'Biscotti', 'Pasta', 'Affettati', 'Fo
 // * ____________________________________________________
 
 
-for (let i = 0; i < shopList.length; i++) {
+// for (let i = 0; i < shopList.length; i++) {
+//     const listItems = document.createElement('li');
+//     shopping.appendChild(listItems);
+//     listItems.innerHTML = shopList[i];
+// }
+
+let i = 0;
+while (i < shopList.length) {
     const listItems = document.createElement('li');
     shopping.appendChild(listItems);
-    listItems.src = shopList[i];
+    listItems.innerHTML = shopList[i];
+    i++;
 }
 
